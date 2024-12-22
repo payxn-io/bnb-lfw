@@ -34,4 +34,8 @@ export default function LeafFireWater() {
         setShowPrize(false);
         setPrizeClaimed(false);
     };
+
+    const claimPrize = () => {
+        setShowModal(true);
+    };
 }
