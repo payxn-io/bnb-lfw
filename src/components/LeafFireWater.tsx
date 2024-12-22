@@ -64,7 +64,7 @@ export default function LeafFireWater() {
                 justifyContent: 'flex-start',
                 position: 'relative'
             }}>
-                
+                <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '2rem', textAlign: 'center' }}>LFW Game Home</h1>
             </div>
 
         </div>
