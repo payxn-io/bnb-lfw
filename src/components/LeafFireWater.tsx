@@ -22,3 +22,5 @@ interface GameResult {
     computerChoice: Choice;
     gameResult: Result;
 }
+
+export default function LeafFireWater() {}
