@@ -28,4 +28,10 @@ export default function LeafFireWater() {
     const [showPrize, setShowPrize] = useState<boolean>(false);
     const [showModal, setShowModal] = useState<boolean>(false);
     const [prizeClaimed, setPrizeClaimed] = useState<boolean>(false);
+
+    const resetGame = () => {
+        setResult(null);
+        setShowPrize(false);
+        setPrizeClaimed(false);
+    };
 }
