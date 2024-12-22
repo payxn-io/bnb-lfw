@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { ConnectButton } from "thirdweb/react";
 import { client } from "../client";
-import { ConnectButton, TransactionButton, useActiveAccount, useActiveWallet, useDisconnect, useReadContract } from "thirdweb/react";
+
 
 type Choice = 'Leaf' | 'Fire' | 'Water';
 type Result = 'Win' | 'Lose' | 'Tie';
@@ -69,10 +70,12 @@ export default function LeafFireWater() {
                 position: 'relative'
             }}>
                 <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '2rem', textAlign: 'center' }}>LFW Game Home</h1>
-                <ConnectButton
-                    client={client}
-                />   
+                <ConnectButton client={client} />
+
+                
+
             </div>
+           
 
         </div>
     
