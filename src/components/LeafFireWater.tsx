@@ -35,6 +35,13 @@ export default function LeafFireWater() {
     const [showModal, setShowModal] = useState<boolean>(false);
     const [prizeClaimed, setPrizeClaimed] = useState<boolean>(false);
 
+    const handleChoice = (playerChoice: Choice) => {
+        const computerChoice = getComputerChoice();
+        const gameResult = determineWinner(playerChoice, computerChoice);
+        setResult({ playerChoice, computerChoice, gameResult });
+        setShowPrize(gameResult === 'Win');
+    };
+
     const resetGame = () => {
         setResult(null);
         setShowPrize(false);
@@ -84,8 +91,38 @@ export default function LeafFireWater() {
                     ]}
                 
                 />
+                {!result ? (
+                    <div>
+                    <h3>Choose your option:</h3>
+                    <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', margin: "2rem" }}>
+                        {choices.map((choice) => (
+                            <button
+                                key={choice}
+                                onClick={() => handleChoice(choice)}
+                                style={{
+                                    padding: '0.5rem 1rem',
+                                    background: '#007bff',
+                                    color: 'white',
+                                    border: 'none',
+                                    borderRadius: '4px',
+                                    cursor: 'pointer',
+                                    fontSize: '3rem'
+                                }}
+                            >
+                                {
+                                    choice === 'Leaf' ? '🍃' :
+                                    choice === 'Fire' ? '️‍🔥' :
+                                    '🌊'
+                                }
+                            </button>
+                        ))}
+                    </div>
+                </div>            
+                ) : (
+                    <div>
 
-                
+                    </div>
+                )}
 
             </div>
            
