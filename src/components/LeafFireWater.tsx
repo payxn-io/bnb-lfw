@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { client } from "../client";
 
 type Choice = 'Leaf' | 'Fire' | 'Water';
 type Result = 'Win' | 'Lose' | 'Tie';
