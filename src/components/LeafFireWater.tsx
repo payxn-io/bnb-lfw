@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { ConnectButton, TransactionButton, useActiveAccount, useActiveWallet, useDisconnect, useReadContract } from "thirdweb/react";
+import { ConnectButton, useActiveAccount, useActiveWallet, useDisconnect } from "thirdweb/react";
 import { client } from "../client";
 import { inAppWallet } from "thirdweb/wallets";
 import { shortenAddress } from "thirdweb/utils";
-import { getContract } from "thirdweb";
+
 import { baseSepolia } from "thirdweb/chains";
-import { claimTo, getBalance } from "thirdweb/extensions/erc20";
+
 
 
 type Choice = 'Leaf' | 'Fire' | 'Water';
