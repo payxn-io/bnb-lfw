@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { client } from "../client";
-import { ConnectButton } from "thirdweb/react";
+import { ConnectButton, TransactionButton, useActiveAccount, useActiveWallet, useDisconnect, useReadContract } from "thirdweb/react";
 
 type Choice = 'Leaf' | 'Fire' | 'Water';
 type Result = 'Win' | 'Lose' | 'Tie';
