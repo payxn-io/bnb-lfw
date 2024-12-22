@@ -7,6 +7,9 @@ A fast-paced, fun Telegram game where players choose between Fire, Water, and Le
 ### Telegram Bot Link:
 - [x] https://t.me/lfwbnb_bot
 
+### To do list
+- [x] Create new telegram bot: @lfwbnb_bot
+
 
 
 ## React + TypeScript + Vite
