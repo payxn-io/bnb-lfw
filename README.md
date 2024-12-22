@@ -12,7 +12,7 @@ A fast-paced, fun Telegram game where players choose between Fire, Water, and Le
 - [x] Create new webapp
 - [x] yarn create vite 
 - [x] use react
-
+- [x] use typescript + SWC
 
 ## React + TypeScript + Vite
 
