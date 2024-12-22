@@ -11,7 +11,7 @@ A fast-paced, fun Telegram game where players choose between Fire, Water, and Le
 - [x] Create new telegram bot: @lfwbnb_bot
 - [x] Create new webapp
 - [x] yarn create vite 
-
+- [x] use react
 
 
 ## React + TypeScript + Vite
