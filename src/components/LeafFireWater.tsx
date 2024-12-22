@@ -38,6 +38,9 @@ export default function LeafFireWater() {
     const {disconnect} = useDisconnect();
     const wallet = useActiveWallet();
 
+
+
+
     const [result, setResult] = useState<GameResult | null>(null);
     const [showPrize, setShowPrize] = useState<boolean>(false);
     const [showModal, setShowModal] = useState<boolean>(false);
@@ -86,8 +89,13 @@ export default function LeafFireWater() {
                 position: 'relative'
             }}>
                 <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '2rem', textAlign: 'center' }}>LFW Game Home</h1>
+                {!account ? (
                 <ConnectButton 
-                    client={client} 
+                    client={client}
+                    accountAbstraction={{
+                        chain: baseSepolia,
+                        sponsorGas: true
+                    }} 
                     wallets={[
                         inAppWallet({
                             auth: {
@@ -99,6 +107,48 @@ export default function LeafFireWater() {
                     ]}
                 
                 />
+            ) : (
+                <>
+        <div
+                            style={{
+                                display: 'flex',
+                                flexDirection: 'row',
+                                height: 'auto',
+                                width: '100%',
+                                gap: '0.5rem',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                                border: '1px solid #f0f0f0',
+                                padding: '0.5rem',
+                            }}
+                        >
+                            <div>
+                                <p
+                                    style={{
+                                        fontSize: '0.5rem',
+                                        marginBottom: '-10px',
+                                        marginTop: '-10px'
+                                    }}
+                                >{shortenAddress(account.address)}</p> 
+                                <p style={{
+                                        fontSize: '0.75rem',
+                                        marginBottom: '-10px'
+                                    }}
+                                >Balance: </p>
+                            </div>
+                            <button
+                                onClick={() => disconnect(wallet!)}
+                                style={{
+                                    padding: '0.5rem 1rem',
+                                    background: '#dc3545',
+                                    color: 'white',
+                                    border: 'none',
+                                    borderRadius: '4px',
+                                    cursor: 'pointer',
+                                    fontSize: '0.75rem'
+                                }}
+                            >Logout</button>
+                        </div>        
                 {!result ? (
                     <div>
                     <h3>Choose your option:</h3>
@@ -138,17 +188,72 @@ export default function LeafFireWater() {
                         <p style={{ fontWeight: 'bold', fontSize: '2rem' }}>
                                     Result: {result.gameResult}
                         </p>
-                            
+                        <div style={{
+                                    position: 'absolute',
+                                    bottom: '2rem',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    gap: '1rem',
+                                    alignItems: 'center'
+                                }}>
+                                    <button
+                                        onClick={resetGame}
+                                        style={{
+                                            padding: '0.5rem 1rem',
+                                            background: '#28a745',
+                                            color: 'white',
+                                            border: 'none',
+                                            borderRadius: '4px',
+                                            cursor: 'pointer'
+                                        }}
+                                    >
+                                        Try Again
+                                    </button>
+                                    {showPrize && !prizeClaimed && (
+                                        <button
+                                            onClick={claimPrize}
+                                            style={{
+                                                padding: '0.5rem 1rem',
+                                                background: '#ffc107',
+                                                color: 'black',
+                                                border: 'none',
+                                                borderRadius: '4px',
+                                                cursor: 'pointer'
+                                            }}
+                                        >Claim Prize</button>
+                                    )}
+                                    {showModal && (
+                                        <div style={{
+                                            position: 'fixed',
+                                            top: 0,
+                                            left: 0,
+                                            right: 0,
+                                            bottom: 0,
+                                            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                                            display: 'flex',
+                                            justifyContent: 'center',
+                                            alignItems: 'center'
+                                        }}>
+                                            <div style={{
+                                                background: 'white',
+                                                padding: '2rem',
+                                                borderRadius: '8px',
+                                                maxWidth: '300px',
+                                                textAlign: 'center'
+                                            }}>
+                                                <h2 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>Claim 10 Tokens!</h2>
+                                                <p style={{ marginBottom: '1rem' }}>You won and can claim 10 tokens to your wallet.</p>
 
-                    </div>
-                    
+                                                
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        )}
+                    </>
                 )}
-
             </div>
-           
-
         </div>
-    
-    
     )
 }
