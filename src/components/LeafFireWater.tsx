@@ -1,7 +1,11 @@
 import { useState } from "react";
-import { ConnectButton } from "thirdweb/react";
+import { ConnectButton, TransactionButton, useActiveAccount, useActiveWallet, useDisconnect, useReadContract } from "thirdweb/react";
 import { client } from "../client";
 import { inAppWallet } from "thirdweb/wallets";
+import { shortenAddress } from "thirdweb/utils";
+import { getContract } from "thirdweb";
+import { baseSepolia } from "thirdweb/chains";
+import { claimTo, getBalance } from "thirdweb/extensions/erc20";
 
 
 type Choice = 'Leaf' | 'Fire' | 'Water';
@@ -121,17 +125,19 @@ export default function LeafFireWater() {
                 ) : (
                     
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                <p style={{ fontSize: '1.5rem', marginBottom: '-10px' }}>
+                        <p style={{ fontSize: '1.5rem', marginBottom: '-10px' }}>
                                     You chose: {result.playerChoice}
-                                </p>
-                                <p style={{ fontSize: '1.5rem', marginBottom: '-20px' }}>
+                        </p>
+                        <p style={{ fontSize: '1.5rem', marginBottom: '-20px' }}>
                                     Computer chose: {result.computerChoice}
-                                </p>
-                                <p style={{ fontWeight: 'bold', fontSize: '2rem' }}>
+                        </p>
+                        <p style={{ fontWeight: 'bold', fontSize: '2rem' }}>
                                     Result: {result.gameResult}
-                                </p>    
+                        </p>
+                            
 
                     </div>
+                    
                 )}
 
             </div>
