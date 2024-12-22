@@ -16,3 +16,9 @@ const determineWinner = (playerChoice: Choice, computerChoice: Choice): Result =
     }
     return 'Lose';
 };
+
+interface GameResult {
+    playerChoice: Choice;
+    computerChoice: Choice;
+    gameResult: Result;
+}
