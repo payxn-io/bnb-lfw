@@ -23,4 +23,9 @@ interface GameResult {
     gameResult: Result;
 }
 
-export default function LeafFireWater() {}
+export default function LeafFireWater() {
+    const [result, setResult] = useState<GameResult | null>(null);
+    const [showPrize, setShowPrize] = useState<boolean>(false);
+    const [showModal, setShowModal] = useState<boolean>(false);
+    const [prizeClaimed, setPrizeClaimed] = useState<boolean>(false);
+}
