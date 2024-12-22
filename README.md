@@ -9,6 +9,7 @@ A fast-paced, fun Telegram game where players choose between Fire, Water, and Le
 
 ### To do list
 - [x] Create new telegram bot: @lfwbnb_bot
+- [x] Create new webapp
 
 
 
