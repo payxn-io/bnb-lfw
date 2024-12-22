@@ -38,4 +38,20 @@ export default function LeafFireWater() {
     const claimPrize = () => {
         setShowModal(true);
     };
+
+    return (
+        <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100vh',
+            width: '100vw',
+            backgroundColor: '#f0f0f0',
+            color: '#333',
+        }}>
+
+        </div>
+    
+    
+    )
 }
