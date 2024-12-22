@@ -49,6 +49,23 @@ export default function LeafFireWater() {
             backgroundColor: '#f0f0f0',
             color: '#333',
         }}>
+            <div style={{
+                padding: '2rem',
+                margin: '0 0.5rem',
+                width: '400px',
+                maxWidth: '98%',
+                height: '400px',
+                backgroundColor: 'white',
+                borderRadius: '8px',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'flex-start',
+                position: 'relative'
+            }}>
+                
+            </div>
 
         </div>
     
