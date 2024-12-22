@@ -119,7 +119,17 @@ export default function LeafFireWater() {
                     </div>
                 </div>            
                 ) : (
-                    <div>
+                    
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                <p style={{ fontSize: '1.5rem', marginBottom: '-10px' }}>
+                                    You chose: {result.playerChoice}
+                                </p>
+                                <p style={{ fontSize: '1.5rem', marginBottom: '-20px' }}>
+                                    Computer chose: {result.computerChoice}
+                                </p>
+                                <p style={{ fontWeight: 'bold', fontSize: '2rem' }}>
+                                    Result: {result.gameResult}
+                                </p>    
 
                     </div>
                 )}
