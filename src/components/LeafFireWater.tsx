@@ -1,0 +1,1 @@
+type Choice = 'Leaf' | 'Fire' | 'Water';
