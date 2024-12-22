@@ -34,6 +34,10 @@ interface GameResult {
 }
 
 export default function LeafFireWater() {
+    const account = useActiveAccount();
+    const {disconnect} = useDisconnect();
+    const wallet = useActiveWallet();
+
     const [result, setResult] = useState<GameResult | null>(null);
     const [showPrize, setShowPrize] = useState<boolean>(false);
     const [showModal, setShowModal] = useState<boolean>(false);
