@@ -15,6 +15,7 @@ A fast-paced, fun Telegram game where players choose between Fire, Water, and Le
 - [x] use typescript + SWC
 - [x] git init, add ., commit -m
 - [x] yarn add @vkruglikov/react-telegram-web-app
+- [x] test run: npm run dev
 
 ## React + TypeScript + Vite
 
