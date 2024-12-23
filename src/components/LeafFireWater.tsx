@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ConnectButton, TransactionButton, useActiveAccount, useActiveWallet, useDisconnect } from "thirdweb/react";
+import { ConnectButton, TransactionButton, useActiveAccount, useActiveWallet, useDisconnect, useReadContract } from "thirdweb/react";
 import { client } from "../client";
 import { inAppWallet } from "thirdweb/wallets";
 import { shortenAddress } from "thirdweb/utils";
@@ -147,7 +147,7 @@ export default function LeafFireWater() {
                                         fontSize: '0.75rem',
                                         marginBottom: '-10px'
                                     }}
-                                >Balance: {tokenbalance?.displayValue}</p>
+                                >Balance: </p>
                             </div>
                             <button
                                 onClick={() => disconnect(wallet!)}
