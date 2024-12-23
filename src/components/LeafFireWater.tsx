@@ -104,7 +104,7 @@ export default function LeafFireWater() {
                 position: 'relative'
             }}>
                 {/* Add the logo */}
-                <div style={{ textAlign: "center", marginTop: "40px" }}>
+                <div style={{ textAlign: "center", marginTop: "100px" }}>
                     <img 
                         src={payxnLogo} 
                         alt="Payxn Logo" 
@@ -176,6 +176,7 @@ export default function LeafFireWater() {
                         </div>        
                 {!result ? (
                     <div>
+                        
                     <h3>Pick your wager:</h3>
                     <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', margin: "2rem" }}>
                         {choices.map((choice) => (
@@ -199,6 +200,8 @@ export default function LeafFireWater() {
                                 }
                             </button>
                         ))}
+
+                        
                     </div>
                     <h3>New Games:</h3>
                     <a href="tg://mkultrabtc.com/panda2" target="_self" style={{ textDecoration: "none" }}>
@@ -206,30 +209,35 @@ export default function LeafFireWater() {
                             <img 
                                 src={monke} 
                                 alt="image" 
-                                width={300} 
-                                height={105} 
+                                width={330} 
+                                height={120} 
                                 style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
                             />
                         </div>
                     </a>
 
                     < br />
+
                     <a href="https://blarearcade.com/giraffe" target="_self" style={{ textDecoration: "none" }}>
-                    <div style={{ textAlign: "center", marginTop: "0px" }}>
-                        <img 
-                            src={giraffe} 
-                            alt="image" 
-                            width={300} 
-                            height={105} 
-                            style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
-                        />
-                    </div>
+                        <div style={{ textAlign: "center", marginTop: "0px" }}>
+                            <img 
+                                src={giraffe} 
+                                alt="image" 
+                                width={330} 
+                                height={120} 
+                                style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
+                            />
+                        </div>
                     </a>
+                    
 
                 </div>            
                 ) : (
                     
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        
+                        
+                        
                         <p style={{ fontSize: '1.5rem', marginBottom: '-10px' }}>
                                     You chose: {result.playerChoice}
                         </p>
@@ -240,7 +248,7 @@ export default function LeafFireWater() {
                                     Result: {result.gameResult}
                         </p>
                         <div style={{
-                                    position: 'absolute',
+                                    position: 'relative',
                                     bottom: '2rem',
                                     display: 'flex',
                                     flexDirection: 'column',
@@ -325,6 +333,8 @@ export default function LeafFireWater() {
                         )}
                     </>
                 )}
+
+                
             </div>
         </div>
     )
