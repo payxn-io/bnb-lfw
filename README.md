@@ -7,6 +7,9 @@ A fast-paced, fun Telegram game where players choose between Fire, Water, and Le
 ### Telegram Bot Link:
 - [x] https://t.me/lfwbnb_bot
 
+### Deployed Smart Contract BNB Smartchain Testnet
+- [x] https://testnet.bscscan.com/address/0x044E9c04c0Bb6Dc82f86da4ae0B1269Dbd3c804a
+
 ### To do list
 - [x] Create new telegram bot: @lfwbnb_bot
 - [x] Create new webapp
