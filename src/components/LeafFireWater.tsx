@@ -110,7 +110,7 @@ export default function LeafFireWater() {
                         alt="Payxn Logo" 
                         width={150} 
                         height={50} 
-                        style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
+                        style={{ display: "block", marginTop: "40px" }} // Optional for centering the image
                     />
                 </div>
                 <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '2rem', textAlign: 'center' }}>LFW Game Home</h1>
