@@ -101,6 +101,10 @@ export default function LeafFireWater() {
                 justifyContent: 'flex-start',
                 position: 'relative'
             }}>
+                {/* Add the image */}
+                <div style={{ textAlign: "center", marginTop: "100px" }}>
+                    <Image src={thirdwebLogo} alt="Thirdweb Logo" width={240} height={80} />
+                </div>
                 <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '2rem', textAlign: 'center' }}>LFW Game Home</h1>
                 {!account ? (
                 <ConnectButton 
