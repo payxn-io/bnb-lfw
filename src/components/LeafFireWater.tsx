@@ -147,7 +147,7 @@ export default function LeafFireWater() {
                                         fontSize: '0.75rem',
                                         marginBottom: '-10px'
                                     }}
-                                >Balance: </p>
+                                >Balance: {tokenbalance?.displayValue}</p>
                             </div>
                             <button
                                 onClick={() => disconnect(wallet!)}
