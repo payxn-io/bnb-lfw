@@ -6,7 +6,7 @@ import { shortenAddress } from "thirdweb/utils";
 import { getContract } from "thirdweb";
 import { bscTestnet } from "thirdweb/chains";
 import { claimTo, getBalance } from "thirdweb/extensions/erc20";
-import thirdwebLogo from "../public/payxn-logo.png";
+import payxnLogo from "../assets/payxn-logo-BNB.png";
 
 
 type Choice = 'Leaf' | 'Fire' | 'Water';
@@ -91,7 +91,7 @@ export default function LeafFireWater() {
                 margin: '0 0.5rem',
                 width: '400px',
                 maxWidth: '98%',
-                height: '400px',
+                height: '800px',
                 backgroundColor: 'white',
                 borderRadius: '8px',
                 boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
@@ -101,9 +101,15 @@ export default function LeafFireWater() {
                 justifyContent: 'flex-start',
                 position: 'relative'
             }}>
-                {/* Add the image */}
-                <div style={{ textAlign: "center", marginTop: "100px" }}>
-                    <Image src={thirdwebLogo} alt="Thirdweb Logo" width={240} height={80} />
+                {/* Add the logo */}
+                <div style={{ textAlign: "center", marginTop: "10px" }}>
+                    <img 
+                        src={payxnLogo} 
+                        alt="Payxn Logo" 
+                        width={240} 
+                        height={80} 
+                        style={{ display: "block", marginTop: "-60px" }} // Optional for centering the image
+                    />
                 </div>
                 <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '2rem', textAlign: 'center' }}>LFW Game Home</h1>
                 {!account ? (
@@ -192,6 +198,7 @@ export default function LeafFireWater() {
                             </button>
                         ))}
                     </div>
+
                 </div>            
                 ) : (
                     
