@@ -4,7 +4,7 @@ import { client } from "../client";
 import { inAppWallet } from "thirdweb/wallets";
 import { shortenAddress } from "thirdweb/utils";
 import { getContract } from "thirdweb";
-import { baseSepolia, bscTestnet } from "thirdweb/chains";
+import { bscTestnet } from "thirdweb/chains";
 import { claimTo } from "thirdweb/extensions/erc20";
 
 
