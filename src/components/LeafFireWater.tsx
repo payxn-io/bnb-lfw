@@ -177,7 +177,7 @@ export default function LeafFireWater() {
                         </div>        
                 {!result ? (
                     <div>
-                    <h3>Choose your option:</h3>
+                    <h3>Pick your wager:</h3>
                     <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', margin: "2rem" }}>
                         {choices.map((choice) => (
                             <button
@@ -201,23 +201,25 @@ export default function LeafFireWater() {
                             </button>
                         ))}
                     </div>
-
-                    <div style={{ textAlign: "center", marginTop: "100px" }}>
+                    <h3>New Games:</h3>
+                    <div style={{ textAlign: "center", marginTop: "40px" }}>
                         <img 
                             src={monke} 
                             alt="image" 
-                            width={240} 
-                            height={80} 
+                            width={400} 
+                            height={140} 
                             style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
                         />
                     </div>
+
+                    < br />
 
                     <div style={{ textAlign: "center", marginTop: "0px" }}>
                         <img 
                             src={giraffe} 
                             alt="image" 
-                            width={240} 
-                            height={80} 
+                            width={400} 
+                            height={140} 
                             style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
                         />
                     </div>
