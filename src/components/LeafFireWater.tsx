@@ -201,7 +201,7 @@ export default function LeafFireWater() {
                         ))}
                     </div>
                     <h3>New Games:</h3>
-                    <a href="https://google.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                    <a href="mkultrabtc.com/panda2" target="" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                         <div style={{ textAlign: "center", marginTop: "20px" }}>
                             <img 
                                 src={monke} 
