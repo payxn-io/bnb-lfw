@@ -206,8 +206,8 @@ export default function LeafFireWater() {
                             <img 
                                 src={monke} 
                                 alt="image" 
-                                width={400} 
-                                height={140} 
+                                width={300} 
+                                height={105} 
                                 style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
                             />
                         </div>
@@ -219,8 +219,8 @@ export default function LeafFireWater() {
                         <img 
                             src={giraffe} 
                             alt="image" 
-                            width={400} 
-                            height={140} 
+                            width={300} 
+                            height={105} 
                             style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
                         />
                     </div>
