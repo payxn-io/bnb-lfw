@@ -7,7 +7,6 @@ import { getContract } from "thirdweb";
 import { bscTestnet } from "thirdweb/chains";
 import { claimTo, getBalance } from "thirdweb/extensions/erc20";
 import payxnLogo from "../assets/payxn-logo-BNB.png";
-import newLogo from "../assets/payxn-logo.png";
 import monke from "../assets/monke.png";
 import giraffe from "../assets/giraffe.png";
 
