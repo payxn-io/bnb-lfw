@@ -23,6 +23,7 @@ A fast-paced, fun Telegram game where players choose between Fire, Water, and Le
 - [x] new mini-app link: https://t.me/lfwbnb_bot/lfwbnb
 - [x] add webthird sdk
 - [x] create client.ts for webthird sdk
+- [x] Build the fire, water & leaf game
 
 ## React + TypeScript + Vite
 
