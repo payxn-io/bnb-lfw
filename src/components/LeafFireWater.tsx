@@ -201,7 +201,7 @@ export default function LeafFireWater() {
                         ))}
                     </div>
                     <h3>New Games:</h3>
-                    <div style={{ textAlign: "center", marginTop: "40px" }}>
+                    <div style={{ textAlign: "center", marginTop: "20px" }}>
                         <img 
                             src={monke} 
                             alt="image" 
