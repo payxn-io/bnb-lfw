@@ -6,6 +6,7 @@ import { shortenAddress } from "thirdweb/utils";
 import { getContract } from "thirdweb";
 import { bscTestnet } from "thirdweb/chains";
 import { claimTo, getBalance } from "thirdweb/extensions/erc20";
+import { token } from "thirdweb/extensions/vote";
 
 
 
@@ -147,7 +148,7 @@ export default function LeafFireWater() {
                                         fontSize: '0.75rem',
                                         marginBottom: '-10px'
                                     }}
-                                >Balance: </p>
+                                >Balance: {tokenbalance?.displayValue}</p>
                             </div>
                             <button
                                 onClick={() => disconnect(wallet!)}
