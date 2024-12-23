@@ -248,6 +248,27 @@ export default function LeafFireWater() {
                                                 <h2 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>Claim 10 Tokens!</h2>
                                                 <p style={{ marginBottom: '1rem' }}>You won and can claim 10 tokens to your wallet.</p>
 
+                                                <TransactionButton
+                                                    transaction={() => claimTo({
+                                                        contract: contract,
+                                                        to: account.address,
+                                                        quantity: "10"
+                                                    })}
+                                                    onTransactionConfirmed={() => {
+                                                        alert('Prize claimed!')
+                                                        setShowModal(false)
+                                                        setPrizeClaimed(true)
+                                                    }}
+                                                    style={{
+                                                        padding: '0.5rem 1rem',
+                                                        background: '#28a745',
+                                                        color: 'white',
+                                                        border: 'none',
+                                                        borderRadius: '4px',
+                                                        cursor: 'pointer'
+                                                    }}
+                                                >Claim Prize</TransactionButton>
+                                            
                                                 
                                             </div>
                                         </div>
