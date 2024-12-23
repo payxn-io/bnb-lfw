@@ -204,8 +204,18 @@ export default function LeafFireWater() {
 
                     <div style={{ textAlign: "center", marginTop: "100px" }}>
                         <img 
-                            src={newLogo} 
-                            alt="Payxn Logo" 
+                            src={monke} 
+                            alt="image" 
+                            width={240} 
+                            height={80} 
+                            style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
+                        />
+                    </div>
+
+                    <div style={{ textAlign: "center", marginTop: "0px" }}>
+                        <img 
+                            src={giraffe} 
+                            alt="image" 
                             width={240} 
                             height={80} 
                             style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
