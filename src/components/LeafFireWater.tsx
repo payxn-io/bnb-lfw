@@ -6,6 +6,7 @@ import { shortenAddress } from "thirdweb/utils";
 import { getContract } from "thirdweb";
 import { bscTestnet } from "thirdweb/chains";
 import { claimTo, getBalance } from "thirdweb/extensions/erc20";
+import thirdwebLogo from "../public/payxn-logo.png";
 
 
 type Choice = 'Leaf' | 'Fire' | 'Water';
