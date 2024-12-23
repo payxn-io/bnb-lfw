@@ -5,7 +5,7 @@ import { inAppWallet } from "thirdweb/wallets";
 import { shortenAddress } from "thirdweb/utils";
 import { getContract } from "thirdweb";
 import { bscTestnet } from "thirdweb/chains";
-import { claimTo } from "thirdweb/extensions/erc20";
+import { claimTo, getBalance } from "thirdweb/extensions/erc20";
 
 
 
@@ -67,6 +67,14 @@ export default function LeafFireWater() {
     const claimPrize = () => {
         setShowModal(true);
     };
+
+    const { data: tokenbalance } = useReadContract(
+        getBalance,
+        {
+            contract: contract,
+            address: account?.address!
+        }
+    )
 
     return (
         <div style={{
