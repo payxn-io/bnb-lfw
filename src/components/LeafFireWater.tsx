@@ -214,7 +214,7 @@ export default function LeafFireWater() {
                     </a>
 
                     < br />
-
+                    <a href="https://blarearcade.com/giraffe" target="" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                     <div style={{ textAlign: "center", marginTop: "0px" }}>
                         <img 
                             src={giraffe} 
@@ -224,6 +224,7 @@ export default function LeafFireWater() {
                             style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
                         />
                     </div>
+                    </a>
 
                 </div>            
                 ) : (
