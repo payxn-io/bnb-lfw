@@ -3,7 +3,7 @@ import { ConnectButton, useActiveAccount, useActiveWallet, useDisconnect } from 
 import { client } from "../client";
 import { inAppWallet } from "thirdweb/wallets";
 import { shortenAddress } from "thirdweb/utils";
-
+import { getContract } from "thirdweb";
 import { baseSepolia, bscTestnet } from "thirdweb/chains";
 
 
