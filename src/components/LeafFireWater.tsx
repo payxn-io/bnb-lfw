@@ -7,6 +7,7 @@ import { getContract } from "thirdweb";
 import { bscTestnet } from "thirdweb/chains";
 import { claimTo, getBalance } from "thirdweb/extensions/erc20";
 import payxnLogo from "../assets/payxn-logo-BNB.png";
+import newLogo from "../assets/payxn-logo.png";
 
 
 type Choice = 'Leaf' | 'Fire' | 'Water';
@@ -102,13 +103,13 @@ export default function LeafFireWater() {
                 position: 'relative'
             }}>
                 {/* Add the logo */}
-                <div style={{ textAlign: "center", marginTop: "10px" }}>
+                <div style={{ textAlign: "center", marginTop: "40px" }}>
                     <img 
                         src={payxnLogo} 
                         alt="Payxn Logo" 
                         width={240} 
                         height={80} 
-                        style={{ display: "block", marginTop: "-60px" }} // Optional for centering the image
+                        style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
                     />
                 </div>
                 <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '2rem', textAlign: 'center' }}>LFW Game Home</h1>
@@ -197,6 +198,16 @@ export default function LeafFireWater() {
                                 }
                             </button>
                         ))}
+                    </div>
+
+                    <div style={{ textAlign: "center", marginTop: "100px" }}>
+                        <img 
+                            src={newLogo} 
+                            alt="Payxn Logo" 
+                            width={240} 
+                            height={80} 
+                            style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
+                        />
                     </div>
 
                 </div>            
