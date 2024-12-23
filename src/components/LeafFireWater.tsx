@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { ConnectButton, useActiveAccount, useActiveWallet, useDisconnect } from "thirdweb/react";
+import { ConnectButton, TransactionButton, useActiveAccount, useActiveWallet, useDisconnect } from "thirdweb/react";
 import { client } from "../client";
 import { inAppWallet } from "thirdweb/wallets";
 import { shortenAddress } from "thirdweb/utils";
 import { getContract } from "thirdweb";
 import { baseSepolia, bscTestnet } from "thirdweb/chains";
+import { claimTo } from "thirdweb/extensions/erc20";
 
 
 
