@@ -6,8 +6,6 @@ import { shortenAddress } from "thirdweb/utils";
 import { getContract } from "thirdweb";
 import { bscTestnet } from "thirdweb/chains";
 import { claimTo, getBalance } from "thirdweb/extensions/erc20";
-import { token } from "thirdweb/extensions/vote";
-
 
 
 type Choice = 'Leaf' | 'Fire' | 'Water';
