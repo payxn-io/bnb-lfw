@@ -98,7 +98,7 @@ export default function LeafFireWater() {
                 <ConnectButton 
                     client={client}
                     accountAbstraction={{
-                        chain: baseSepolia,
+                        chain: bscTestnet,
                         sponsorGas: true
                     }} 
                     wallets={[
