@@ -9,6 +9,7 @@ import { claimTo, getBalance } from "thirdweb/extensions/erc20";
 import payxnLogo from "../assets/payxn-logo-BNB.png";
 import monke from "../assets/monke.png";
 import giraffe from "../assets/giraffe.png";
+import { walletConnect } from "thirdweb/wallets";
 
 
 type Choice = 'Leaf' | 'Fire' | 'Water';
@@ -122,6 +123,7 @@ export default function LeafFireWater() {
                         sponsorGas: true
                     }} 
                     wallets={[
+                        walletConnect(),
                         inAppWallet({
                             auth: {
                                 options:[
