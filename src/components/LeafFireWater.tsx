@@ -201,7 +201,7 @@ export default function LeafFireWater() {
                         ))}
                     </div>
                     <h3>New Games:</h3>
-                    <a href="https://mkultrabtc.com/panda2" target="" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                    <a href="https://mkultrabtc.com/panda2" target="_self" style={{ textDecoration: "none" }}>
                         <div style={{ textAlign: "center", marginTop: "20px" }}>
                             <img 
                                 src={monke} 
@@ -214,7 +214,7 @@ export default function LeafFireWater() {
                     </a>
 
                     < br />
-                    <a href="https://blarearcade.com/giraffe" target="" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                    <a href="https://blarearcade.com/giraffe" target="_self" style={{ textDecoration: "none" }}>
                     <div style={{ textAlign: "center", marginTop: "0px" }}>
                         <img 
                             src={giraffe} 
