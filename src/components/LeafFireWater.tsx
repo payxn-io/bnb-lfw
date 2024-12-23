@@ -9,6 +9,7 @@ import { claimTo, getBalance } from "thirdweb/extensions/erc20";
 import payxnLogo from "../assets/payxn-logo-BNB.png";
 import newLogo from "../assets/payxn-logo.png";
 import monke from "../assets/monke.png";
+import giraffe from "../assets/giraffe.png";
 
 
 type Choice = 'Leaf' | 'Fire' | 'Water';
