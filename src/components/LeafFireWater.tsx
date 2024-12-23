@@ -108,8 +108,8 @@ export default function LeafFireWater() {
                     <img 
                         src={payxnLogo} 
                         alt="Payxn Logo" 
-                        width={240} 
-                        height={80} 
+                        width={150} 
+                        height={50} 
                         style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
                     />
                 </div>
@@ -201,15 +201,17 @@ export default function LeafFireWater() {
                         ))}
                     </div>
                     <h3>New Games:</h3>
-                    <div style={{ textAlign: "center", marginTop: "20px" }}>
-                        <img 
-                            src={monke} 
-                            alt="image" 
-                            width={400} 
-                            height={140} 
-                            style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
-                        />
-                    </div>
+                    <a href="https://google.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                        <div style={{ textAlign: "center", marginTop: "20px" }}>
+                            <img 
+                                src={monke} 
+                                alt="image" 
+                                width={400} 
+                                height={140} 
+                                style={{ display: "block", marginTop: "0px" }} // Optional for centering the image
+                            />
+                        </div>
+                    </a>
 
                     < br />
 
