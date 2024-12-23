@@ -4,7 +4,7 @@ import { client } from "../client";
 import { inAppWallet } from "thirdweb/wallets";
 import { shortenAddress } from "thirdweb/utils";
 
-import { baseSepolia } from "thirdweb/chains";
+import { baseSepolia, bscTestnet } from "thirdweb/chains";
 
 
 
@@ -38,7 +38,11 @@ export default function LeafFireWater() {
     const {disconnect} = useDisconnect();
     const wallet = useActiveWallet();
 
-
+    const contract = getContract({
+        client: client,
+        chain: bscTestnet,
+        address: "0x044E9c04c0Bb6Dc82f86da4ae0B1269Dbd3c804a"
+    });
 
 
     const [result, setResult] = useState<GameResult | null>(null);
