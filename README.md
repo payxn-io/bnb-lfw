@@ -10,6 +10,13 @@ A fast-paced, fun Telegram game where players choose between Fire, Water, and Le
 ### Deployed Smart Contract BNB Smartchain Testnet
 - [x] https://testnet.bscscan.com/address/0x044E9c04c0Bb6Dc82f86da4ae0B1269Dbd3c804a
 
+### Deployed Smart contracts BNB Smartchain Mainnet
+- [x] ERC-721 Worker NFT: https://bscscan.com/address/0x02Dc83855c897d7a057AA35b35BC74509dFb4860
+- [x] ERC-20 BitGold: https://bscscan.com/address/0x98141090c12bc2dB4bbD57f9617A9796175e773d
+- [x] ERC-1155 Business: https://bscscan.com/address/0xF585607e0516b8e099F5e857CaDa0d07E473493e
+- [x] Staking contract: https://bscscan.com/address/0xfe1C530aBE44D21Af594eCe101866e4dA01Bd1E7
+- [x] AccountFactory: https://bscscan.com/address/0x58cC6C8F91bEbd1FF531922679D5566aFC0C7E1c
+
 ### To do list
 - [x] Create new telegram bot: @lfwbnb_bot
 - [x] Create new webapp
